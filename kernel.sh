@@ -16,3 +16,5 @@ git add *
 git commit -m "Updated: $1"
 git push
 cd ${current}
+rm -rf tmp
+rm -rf _site
