@@ -76,11 +76,9 @@
 
 	<nav class="main">
 	
-		<a  href="/mission/">Mission</a>
-	
-		<a  href="/webinars/">Webinars</a>
-	
 		<a  href="/blog/">Blog</a>
+	
+		<a  href="/mission/">Mission</a>
 	
 </nav>
 	<nav class="right hide-on-signed-in">
@@ -221,7 +219,7 @@
 						"title": "The CloudFx Community",
 						"categories": "",
 						"url": " /",
-						"content": "Research\n\t\t\t\tResearch together on latest technologies.\n\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\n\n\tCommits today\n\t\n\t\t\n\t\t\t\n\t\t\n\n\n\t\t\t\n\t\t\t\tUpdated index.html\n\t\t\t\tEditor committed via CloudFx a few moments ago\n\t\t\t\n\t\t\n\t\n\tCommits last week\n\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tAdded SEO tags\n\t\t\t\tDeveloper committed 3 days ago\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\n\n\n\t\t\t\n\t\t\t\tStarted a new draft post\n\t\t\t\tEditor committed via CloudFx 4 days ago\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\n\n\n\t\t\t\n\t\t\t\tAdded editable classes\n\t\t\t\tDeveloper committed via CloudFx 5 days ago\n\t\t\t\n\t\t\n\t\n\n\n\t\t\t\t\t\n\t\t\t\n\t\t\n\t\n\n\n  \n\t\n\t\t\n\t\t\t\n\t\t\t\tDiscussion\n\t\t\t\tDiscuss together on latest technologies.\n\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\n\t\n\n\t\t\t\t\t\n\t\t\t\n\t\t\n\t\n\n\n  \n\t\n\t\t\n\t\t\t\n\t\t\t\tSharing Knowledge\n\t\t\t\tSharing.\n\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\n\t\t\t\t\t\n\t\t\t\n\t\t\n\t\n\n\n  \n\t\n\t\t\n\t\t\t\n\t\t\t\tOpen Source\n\t\t\t\tOpen Source.\n\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\n\t\n\t\t\n\t\n\n\t\t\n\n\t\t\n\t\t\t\n\t\n\n\t\t\t\n\t\t\n\t\n\n\n\t\t\t\t\t\n\t\t\t\n\t\t\n\t\n\n\n\n\n\n\t\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\tBhuwan P. Upadhyay\n\t\t\t\t\tLeader/Co-Founder of CloudFx Community\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t“Community for developers of developers.”\n\n\t\t\t\n\t\t\n\t\tView Case Study &rsaquo;"
+						"content": "Bhuwan P. Upadhyay\n\t\t\t\t\tLeader/Co-Founder of CloudFx Community\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t“Community for developers of developers.”\n\n\t\t\t\n\t\t\n\t\tView Case Study &rsaquo;"
 					}
 					
 				
@@ -302,21 +300,6 @@
 				
 			
 		
-			
-				
-					,
-					
-					"webinars": {
-						"id": "webinars",
-						"title": "Webinars",
-						"categories": "",
-						"url": " /webinars/",
-						"content": "{% include components/subscribe.html %}\n\n\n    {% for post in site.webinars limit: 10 %}\n    \n        {% if post.image_featured and post.image %}\n        \n            \n                \n            \n        \n        {% endif %}\n        \n            \n                {{ post.title }}\n                {{ post.date | date: \"%d %b %Y\" }}\n            \n\n            \n                {% assign author = site.data.authors[post.author] %}\n                \n                {{ author.name }}\n                {% for category in post.categories %}\n                &bull; {{ category }}\n                {% endfor %}\n\n            \n\n            \n                {% if post.content contains '' %}\n                {{ post.content | split:'' | first }}\n                {% else %}\n                {{ post.excerpt }}\n                {% endif %}\n            \n\n            Read more &rsaquo;\n        \n    \n    {% endfor %}"
-					}
-					
-				
-			
-		
 	};
 </script>
 
@@ -368,11 +351,9 @@
             <ul>
                 <li><h4>CloudFx</h4></li>
                 
-                <li><a href="/mission/">Mission</a></li>
-                
-                <li><a href="/webinars/">Webinars</a></li>
-                
                 <li><a href="/blog/">Blog</a></li>
+                
+                <li><a href="/mission/">Mission</a></li>
                 
             </ul>
             
